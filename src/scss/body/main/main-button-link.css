@@ -1,0 +1,13 @@
+.main-button-link__logo {
+  width: 40px;
+  height: 40px;
+  margin-left: 8px;
+}
+.main-button-link__logo--check {
+  background-image: url("../img/checkstatus.svg");
+}
+.main-button-link__logo--repair {
+  background-image: url("../img/repair.svg");
+}
+
+/*# sourceMappingURL=main-button-link.css.map */
