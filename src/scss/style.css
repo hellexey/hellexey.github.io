@@ -632,7 +632,8 @@ html {
 @media (min-width: 1440px) {
   .mobile-menu {
     display: block;
-    position: static;
+    position: sticky;
+    top: 15px;
     box-shadow: none;
   }
 }
@@ -642,8 +643,7 @@ html {
 .mobile-menu__container {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  max-height: 900px;
+  height: 100vh;
 }
 .mobile-menu__header {
   display: flex;
@@ -711,6 +711,7 @@ html {
 }
 .mobile-menu__footer {
   margin-top: auto;
+  margin-bottom: 20px;
 }
 .mobile-menu__footer-buttons {
   margin-left: 16px;
@@ -1011,17 +1012,16 @@ html {
 }
 .company-info__text {
   max-width: 312px;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin: 0 16px;
 }
 @media (min-width: 768px) {
   .company-info__text {
-    margin-left: 24px;
+    margin: 0 24px;
   }
 }
 @media (min-width: 1120px) {
   .company-info__text {
-    margin-left: 32px;
+    margin: 0 32px;
     max-width: 490px;
   }
 }
@@ -1045,19 +1045,18 @@ html {
   font-family: TTLakes-Medium, sans-serif;
   font-size: 16px;
   line-height: 24px;
-  margin-left: 16px;
-  margin-bottom: 16px;
+  margin: 0 16px 16px;
   cursor: pointer;
   outline: none;
 }
 @media (min-width: 768px) {
   .company-info__button-more {
-    margin-top: 10px;
+    margin: 10px 16px 0 24px;
   }
 }
 @media (min-width: 1120px) {
   .company-info__button-more {
-    margin-left: 32px;
+    margin: 10px 32px 0;
   }
 }
 .company-info__button-more:hover {
@@ -1085,9 +1084,8 @@ html {
 }
 @media (min-width: 768px) {
   .company-info__image {
-    margin-right: 24px;
     max-width: 360px;
-    margin-bottom: 32px;
+    margin: 0 24px 32px 0;
   }
 }
 @media (min-width: 1120px) {
@@ -1166,7 +1164,7 @@ html {
     padding: 16px 24px;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1120px) {
   .header {
     display: none;
   }
